@@ -8,7 +8,8 @@ module.exports = {
         'shuttle-gray': '#545C6C',
       },
       maxWidth: {
-        'xxs' : '15rem'
+        'xxs' : '15rem',
+        '1400' : '87.5rem'
       },
 
     },
