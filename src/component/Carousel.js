@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 function Carousel() {
     const baseUrl = "src/assets"
     const settingCarousel = {
-		dots: <Dots/>,
+		dots: false,
 		fade: true,
 		infinite: true,
 		speed: 1000,

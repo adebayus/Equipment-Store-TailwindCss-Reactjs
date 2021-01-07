@@ -7,7 +7,7 @@ function Card() {
             {
                 nameProduct : "Steel Series Arctis",
                 type : "Gaming Headphone",
-                stock : 10,
+                price : 1000000,
                 variant : [ "RGB-black", "RGB-White", "Non-White", "Non-Black" ]
             }
         ]
@@ -27,13 +27,13 @@ function Card() {
     var found = product.listProduct[indexProduct]
     console.log(indexProduct)
     return (
-        <div className="shadow-md max-w-xxs w-full bg-white rounded-b-lg rounded-t-lg my-10 mx-auto " >
+        <div className="shadow-md max-w-xxs w-full bg-white rounded-b-lg rounded-t-lg mx-auto " >
             <div className="flex-none w-full rounded-t-lg">
                 <img className="inset-0 rounded-t-lg object-contain h-44 w-full object-center" src="https://media.steelseriescdn.com/thumbs/filer_public/0b/9d/0b9dda7e-dae6-4032-a22f-3634a13e20bf/a7p_white_buyimg_02.png__1920x1080_q100_crop-fit_optimize_subsampling-2.png" ></img>
             </div>
             <div className="p-4">
-                <h1 className="text-xl font-semibold">{product.listProduct[indexProduct].nameProduct}</h1>
-    <p className="text-sm font-medium text-gray-500"> Stock { product.listProduct[indexProduct].stock > 5 ? "> 5" : "< 5"} </p>
+                <h1 className="text-gray-500 font-semibold">{product.listProduct[indexProduct].nameProduct}</h1>
+    <p className="text-sm font-bold text-yellow-700"> Rp{ new Intl.NumberFormat(['id']).format(product.listProduct[indexProduct].price) } </p>
                 <div className="-mx-1 flex flex-wrap mt-2 mb-1">
                     {
                         found.variant.map(
